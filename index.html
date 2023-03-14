@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <title>Job Rotation - Ribeirão Preto - ATUALIZADO</title>
+</head>
+<body>
+    <header id="header">
+        <h1>Teste Prático para a vaga de Estagio em Análise e Desenvolvimento</h1>
+        <h2>Resolução das questões</h2>
+        <p class="jobRotation">Job Rotation - Ribeirão Preto - ATUALIZADO <br></p>
+    </header>
+
+    <main id="main-site">      
+        <section id="q1">          
+            <p>1&rpar; Observe o trecho de código abaixo:</p>
+
+            <code>
+                <pre>
+                    <p>int INDICE = 13, SOMA = 0, K = 0;</p>
+
+                    <p>enquanto K &lt; INDICE faça
+                        {  
+                        K = K + 1;  
+                        SOMA = SOMA + K; 
+                        }  
+                        imprimir(SOMA);
+                    </p>
+                    </pre>
+                </code>
+                        <p>
+                            Ao final do processamento, qual será o valor da variável SOMA?
+                        </p>
+                    
+                    <p><i>Resposta: 91</i></p>
+                    
+                
+        </section>
+
+
+        <section id="q2">
+            <p>2&rpar; Dado a sequência de Fibonacci, onde se inicia por 0 e 1 e o próximo valor sempre será a soma dos 2 valores anteriores (exemplo: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34...), escreva um programa na linguagem que desejar onde, informado um número, ele calcule a sequência de Fibonacci e retorne uma mensagem avisando se o número informado pertence ou não a sequência.</p>
+
+            <p>
+            IMPORTANTE:
+            Esse número pode ser informado através de qualquer entrada de sua preferência ou pode ser previamente definido no código;
+            </p>
+
+            <p class="resolution">Sequência de Fibonacci</p>
+                <label for="fibonacci">Informe um número: </label>
+                <input type="number" id="fibonacci" name="fibonacci" placeholder="5" >
+                <button id="calc" onclick="fibonacciFunction()">Calcular</button>
+                <br>
+                <label for="" id="resultFibonacci">Resultado: </label><span id="result" class="spanResult"></span>
+            
+        </section>
+
+        
+        <section id="q3">
+            <p>3&rpar; Descubra a lógica e complete o próximo elemento:</p>
+
+            <p>a&rpar; 1, 3, 5, 7, ___ Resposta: 9 <br><i>Lógica: o número anterior + 2</i></p>
+
+            <p>b&rpar; 2, 4, 8, 16, 32, 64, ____Resposta:128 <br><i>Lógica: número anterior ao quadrado</i></p>
+
+
+            <p>c&rpar; 0, 1, 4, 9, 16, 25, 36, ____Resposta:49 <br><i>Lógica:ao resultado anterior somente é somado o próximo número impar da sequência Ex:(+1,+3,+5,+7,+9,+11,+13...).</i></p>
+
+            <p>d&rpar; 4, 16, 36, 64, ____Resposta:100 <br><i>Lógica: Quadrado da sequência de números pares</i></p>
+
+            <p>e&rpar; 1, 1, 2, 3, 5, 8, ____Resposta: 13<br><i>Lógica:Fibonacci ( a soma dos dois números anteriores) </i></p>
+
+            <p>f&rpar; 2,10, 12, 16, 17, 18, 19, ____Resposta: undefined <br><i>Lógica: Não consegui identificar a lógica</i></p>
+        </section>
+
+
+
+        <section id="q4">
+            <p>4&rpar; Dois veículos (um carro e um caminhão) saem respectivamente de cidades opostas pela mesma rodovia. O carro de Ribeirão Preto em direção a Franca, a uma velocidade constante de 110 km/h e o caminhão de Franca em direção a Ribeirão Preto a uma velocidade constante de 80 km/h. Quando eles se cruzarem na rodovia, qual estará mais próximo a cidade de Ribeirão Preto?
+            </p>
+            <p>IMPORTANTE:
+            <br>
+            a&rpar; Considerar a distância de 100km entre a cidade de Ribeirão Preto <-> Franca.
+            <br>  
+            b&rpar; Considerar 2 pedágios como obstáculo e que o caminhão leva 5 minutos a mais para passar em cada um deles e o carro possui tag de pedágio (Sem Parar)
+            <br>
+            c&rpar; Explique como chegou no resultado.</p>
+    
+            <div>
+                <p>
+                    <i>Resposta: levando em consideração o momento em que iniciarem a se cruzar, o carro vai estar mais próximo de Ribeirão preto, pois como ele vem dessa direção <br>
+                sua parte traseira vai estar mais próxima de ribeirão que a parte dianteira do caminhão. <br>Se for levar em consideração o momento em que terminarem a intersecção quem vai estar mais perto é o caminhão, pois a sua dianteira <br>
+                vai estar mais próxima de Ribeirão que o final da traseira do carro. <br>
+                Quaisquer outras informações como distância, velocidade, tempo, obstaculos podem ser desconsiderados pois os dois veículos vão iniciar a <br>
+                intersecção no mesmo ponto da estrada. Oque deve ser levado em consideração é em que ponto é para ser considerado como "eles se cruzarem na rodovia" <br>
+                No inicio ou fim dessa intersecção.
+                    </i>
+                </p>
+            
+            </div>
+        </section>
+
+        <section id="q5">
+            <p>
+                5&rpar; Escreva um programa que inverta os caracteres de um string.
+    
+                IMPORTANTE:
+                a&rpar; Essa string pode ser informada através de qualquer entrada de sua preferência ou pode ser previamente definida no código;
+    
+                b&rpar; Evite usar funções prontas, como, por exemplo, reverse;
+            </p>
+    
+            
+                <p class="resolution">Resolução</p>
+                <label for="inputToReverse">Digite a String para ser invertida:</label>
+                <input type="text" name="inputToReverse" id="inputToReverse" placeholder="Digite aqui">
+                
+                <label for="btnInversion"></label>
+                <button onclick="reverseString()" id="btnInversion">Gerar inversão</button>
+                <label for="inversionResult"></label>
+                <br>
+                <span class="spanResult" id="inversionResult"></span>
+            
+        </section>
+        
+    </main>
+<script src="./index.js"></script>
+       
+</body>
+</html>
